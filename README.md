@@ -42,7 +42,12 @@ Arguments explanation:
 - how to train SSDLite using PASCAL VOC2007 for 100 epochs:
 
 ```
-python train.py --data-dir ./data/VOCdevkit --data-year 2007 --num-epochs 100
+python train.py --data-dir ./data/VOCdevkit --data-type 2007 --num-epochs 100
+```
+
+- how to train SSDLite using pretrained model for different number of class:
+```
+python train.py --dat-dir ./data/CCPD --data-type CCPD --pretrained-type transfer --pretrained-dir ./pretrained
 ```
 
 ## Testing
